@@ -1,17 +1,17 @@
-# business_card
+# 📇 Business Card App
 
-A new Flutter project.
+A simple and personal digital business card application, beautifully built using Flutter to display personal and contact information.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 App Screenshot
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f71c0324-e8dd-4e4b-8970-0d248acb0181" alt="Business Card App Preview" width="320" />
+</p>
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Built With
+* **Flutter** - The powerful cross-platform UI toolkit.
+* **Dart** - The modern programming language.
