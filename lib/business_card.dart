@@ -13,11 +13,13 @@ class BusinessCard extends StatelessWidget {
             Container(
               height: 200,
               width: 200,
-              clipBehavior: Clip.hardEdge,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
+                image: DecorationImage(
+                  image:AssetImage("assets/images/zeyad.png"),
+                  fit: BoxFit.cover,
+                ),
               ),
-              child: Image.asset("assets/images/zeyad.png", fit: BoxFit.cover),
             ),
             const SizedBox(height: 10),
             const Text(
