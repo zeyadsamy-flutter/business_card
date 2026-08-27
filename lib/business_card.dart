@@ -4,25 +4,18 @@ import 'package:flutter/material.dart';
 class BusinessCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xff2a465e),
+    return const Scaffold(
+      backgroundColor: Color(0xff2a465e),
       body: Center(
-        child:  Column(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              height: 200,
-              width: 200,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  image:AssetImage("assets/images/zeyad.png"),
-                  fit: BoxFit.cover,
-                ),
-              ),
+            CircleAvatar(
+              backgroundImage: AssetImage("assets/images/zeyad.png"),
+              radius: 100,
             ),
-            const SizedBox(height: 10),
-            const Text(
+            SizedBox(height: 10),
+            Text(
               "Zeyad Samy",
               style: TextStyle(
                 color: Colors.white,
@@ -30,15 +23,12 @@ class BusinessCard extends StatelessWidget {
                 fontStyle: FontStyle.italic,
               ),
             ),
-            const SizedBox(height: 10),
-            const Text(
-              "FLUTTER DEVELOPER",
-              style: TextStyle(color: Colors.white),
-            ),
-            const SizedBox(height: 10),
-            const ContactField(text: "01270249382", iconField: Icons.phone),
-            const SizedBox(height: 10),
-            const ContactField(text: "zeyaddsamy87@gmail.com", iconField: Icons.mail),
+            SizedBox(height: 10),
+            Text("FLUTTER DEVELOPER", style: TextStyle(color: Colors.white)),
+            SizedBox(height: 10),
+            ContactField(text: "01270249382", iconField: Icons.phone),
+            SizedBox(height: 10),
+            ContactField(text: "zeyaddsamy87@gmail.com", iconField: Icons.mail),
           ],
         ),
       ),
