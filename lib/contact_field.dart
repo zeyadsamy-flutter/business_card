@@ -8,19 +8,13 @@ class ContactField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        return Container(
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(10)),
-        color: Colors.white,
-      ),
-      padding: const EdgeInsets.all(15.0),
+    return Card(
+      color: Colors.white,
       margin: const EdgeInsets.symmetric(horizontal: 25),
-      child: Row(
-        children: [
-          Icon(iconField, size: 30, color: const Color(0xff2a465e)),
-          const SizedBox(width: 20),
-          Text(text, style: const TextStyle(color: Colors.black)),
-        ],
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      child: ListTile(
+        leading: Icon(iconField, color: const Color(0xFF2B475E), size: 30),
+        title: Text(text, style: const TextStyle(color: Colors.black)),
       ),
     );
   }
