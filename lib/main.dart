@@ -2,13 +2,13 @@ import 'package:business_card/business_card.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-
+const MyApp();
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(home:  BusinessCard(), debugShowCheckedModeBanner: false);
+    return const MaterialApp(home:  BusinessCard(), debugShowCheckedModeBanner: false);
   }
 }
